@@ -43,7 +43,7 @@ export default function NavBarDesktop() {
             </div>
             <ul>
               <Link to={{
-                pathname: "/",
+                pathname: "/ATdeploy/",
               }}>
                 <li className={`${styles.liNav} ${isScrolled ? styles.scrolled : ""}`}>Accueil</li>
                 </Link>
@@ -57,7 +57,7 @@ export default function NavBarDesktop() {
             </ul>
             <div className={styles.contactButtonContainer}>
             <Link to={{
-                pathname: "/contact",
+                pathname: "contact",
               }}>
             <button className={styles.contactutton}>
               Contact
