@@ -46,7 +46,7 @@ export default function TemporaryDrawer( {isScrolled}) {
       setOpen(false);
       return;
     }
-    navigate(`/#${anchor}`); // Redirige vers la racine avec l'ancre spécifiée
+    navigate(`/ATdeploy#${anchor}`); // Redirige vers la racine avec l'ancre spécifiée
     setOpen(false); // Ferme le menu déroulant après la navigation
     console.log(text);
   };
