@@ -39,11 +39,11 @@ export default function NavBarDesktop() {
             <div className={styles.logoContainer}>
             <BurgerMenu isScrolled={isScrolled} />
             <img src={ATpartnersLogo} alt="" className={styles.ATpartnersLogo} onClick={()=>navigate("/")} />
-            <h2 className={`${styles.ATtitle} ${isScrolled ? styles.scrolled : ""}`} onClick={()=>navigate("/")}>ATpartners</h2>
+            <h2 className={`${styles.ATtitle} ${isScrolled ? styles.scrolled : ""}`} onClick={()=>navigate("/")}>ATpartnerscoucou</h2>
             </div>
             <ul>
               <Link to={{
-                pathname: "/ATdeploy/",
+                pathname: "/",
               }}>
                 <li className={`${styles.liNav} ${isScrolled ? styles.scrolled : ""}`}>Accueil</li>
                 </Link>
