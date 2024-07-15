@@ -12,7 +12,7 @@ import AboutATservices from './aboutATservices/AboutATservices.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/ATdeploy/",
     element: <App />,
   },
   {
