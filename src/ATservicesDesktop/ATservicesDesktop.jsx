@@ -18,6 +18,7 @@ import Ressources from '../Ressources/Ressources'
 import { useEffect } from "react";
 
 export default function ATservicesDesktop() {
+  const displayed = window.innerWidth;
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -72,11 +73,11 @@ export default function ATservicesDesktop() {
     }
   }
   return (
-    <div className={styles.ATservicesMainContainer} id="atserviceshome">
+    <div className={styles.ATservicesMainContainer}>
       <NavMobile />
       <NavBarDesktop />
       <section className={styles.ATservicesheader}>
-        <div className={styles.mainPicture}>
+        <div className={styles.mainPicture}  id={displayed > 1000 ? "atserviceshome" : null}>
           <img src={ATservicesMain} alt="" className={styles.formBackground} />
           <div className={styles.gradient}></div>
           <div className={styles.textContainer}>

@@ -9,6 +9,7 @@ import Form from './form/Form.jsx';
 import Atservices from './ATservices/Atservices.jsx';
 import ATservicesDesktop from './ATservicesDesktop/ATservicesDesktop.jsx';
 import AboutATservices from './aboutATservices/AboutATservices.jsx';
+import Soon from './soon/Soon.jsx';
 
 const router = createBrowserRouter(
   [
@@ -31,6 +32,14 @@ const router = createBrowserRouter(
     {
       path: "/AboutATservices",
       element:<AboutATservices />, 
+    },
+    {
+      path: "/ATimmobilier",
+      element:<Soon />, 
+    },
+    {
+      path: "/ATpromotion",
+      element:<Soon />, 
     },
   ],
   {

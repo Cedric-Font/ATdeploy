@@ -4,8 +4,13 @@ import SubTitle from "../SubTitle/SubTitle";
 import NavMobile from "../navBarMobile/NavMobile";
 import OurValues from "../OurValues/OurValues";
 import Footer from "../footer/Footer";
+import { useEffect } from "react";
 
 export default function AboutATservices() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const objectifsTab = [
     {
       number: "1.",

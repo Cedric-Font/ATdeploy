@@ -13,8 +13,24 @@ import Footer from "../footer/Footer";
 import FormBackground from "../assets/formBackground.jpg";
 import FormBackground2 from "../assets/formBackground2.png";
 import { FaCircleArrowUp } from "react-icons/fa6";
+import { useState, useEffect } from "react";
 
 export default function Atservices() {
+  const [displayed , setDisplayed] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setDisplayed(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Nettoyage de l'écouteur d'événements lors du démontage du composant
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const iconTab = [
     {
       icon: sale,
@@ -73,7 +89,7 @@ export default function Atservices() {
       <NavMobile />
       <NavBarDesktop />
       <section className={styles.ATservicesheader}>
-        <div className={styles.mainPicture}>
+        <div className={styles.mainPicture} id={displayed <= 1000 ? "atserviceshome" : null}>
           <img src={ATservicesMain} alt="" className={styles.formBackground} />
           <div className={styles.gradient}></div>
           <div className={styles.textContainer}>
@@ -93,7 +109,7 @@ export default function Atservices() {
       </section>
       <section className={styles.bodyContainer}>
         <div className={styles.aboutContainer}>
-          <h2 className={styles.aboutTitle}>Qui sommes-nous ?</h2>
+          <h2 className={styles.aboutTitle} id={displayed <= 1000 ? "quisommesnous?": null}>Qui sommes-nous ?</h2>
           <p className={styles.aboutText}>
             ATServices est une entreprise de BTP qui intervient dans le domaine
             d’installation de panneaux sandwich et menuiseries isothermes. Avec
@@ -157,7 +173,7 @@ export default function Atservices() {
             </div>
           </div>
           </div>
-          <p className={styles.references} id="references">réferences</p>
+          <p className={styles.references} id={displayed <= 1000 ? "references" : null}>réferences</p>
         </div>
       </section>
       <section className={styles.referenceContainer}>
