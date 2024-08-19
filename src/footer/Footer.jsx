@@ -59,19 +59,44 @@ export default function Footer() {
                 <a className={styles.aLinks} href="/contact">
                   Contact
                 </a> */}
-                <Link className={styles.aLinks} to="/">
+                <Link
+                  className={styles.aLinks}
+                  to={{
+                    pathname: "/",
+                  }}
+                >
                   ATpartners
                 </Link>
-                <Link className={styles.aLinks} to="/ATservices">
+                <Link
+                  className={styles.aLinks}
+                  to={{
+                    pathname: "/ATservices",
+                  }}
+                >
                   ATservices
                 </Link>
-                <Link className={styles.aLinks} to="/ATimmobilier">
+                <Link
+                  className={styles.aLinks}
+                  to={{
+                    pathname: "/Atimmobilier",
+                  }}
+                >
                   ATimmobilier
                 </Link>
-                <Link className={styles.aLinks} to="/ATpromotion">
+                <Link
+                  className={styles.aLinks}
+                  to={{
+                    pathname: "/ATpromotion",
+                  }}
+                >
                   ATpromotion
                 </Link>
-                <Link className={styles.aLinks} to="/contact">
+                <Link
+                  className={styles.aLinks}
+                  to={{
+                    pathname: "/contact",
+                  }}
+                >
                   Contact
                 </Link>
                 <a className={styles.aLinks} href="">
