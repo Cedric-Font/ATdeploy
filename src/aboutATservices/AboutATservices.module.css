@@ -80,7 +80,7 @@
   font-size: 18px;
   font-family: inter;
   font-weight: 400;
-  color: #2C4295;
+  color: #2c4295;
   width: 100%;
   padding-inline: 40px;
   box-sizing: border-box;
@@ -102,7 +102,7 @@
 }
 
 .objectifNumber {
-  background-color: #2C4295;
+  background-color: #2c4295;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -120,7 +120,7 @@
 
 .objectifParg {
   width: 80%;
-  color: #2C4295;
+  color: #2c4295;
   font-family: inter;
   font-weight: 400;
   font-size: 18px;

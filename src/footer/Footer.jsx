@@ -13,12 +13,12 @@ export default function Footer() {
             <div className={styles.allfooterDescriptionContent}>
               <h2 className={styles.footerTitle}>ATPartners</h2>
               <p className={styles.footerDescription}>
-                ATpartners is a company specialised in the design, the
-                manufacture and the fitting of all kinds of containment:
-                partition walls, ceilings, glasses, doors or even false
-                floors.Whatever the constraints of your work environment, we
-                adapt our solutions to propose you reliable and customised
-                creations.
+                ATpartners, expert en installation de panneaux sandwich et
+                menuiseries isothermes, compte 15 ans d'expérience. L'entreprise
+                a réalisé plus de 100 chantiers en 2022, couvrant plus de 75,000
+                m² en salles propres et chambres froides. Son chiffre d'affaires
+                dépasse 2,600,000 € HT, avec des projets en France et à
+                l'international.
               </p>
             </div>
             <div className={styles.allIInformationsFooterContent}>

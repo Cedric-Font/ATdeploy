@@ -14,7 +14,7 @@
 .gradient {
   background: linear-gradient(
     90deg,
-    rgba(44, 66, 149, 1) 0%,
+    rgba(44, 67, 149, 0.583) 0%,
     rgba(37, 129, 196, 0.43) 100%
   );
   width: 100%;
@@ -115,187 +115,194 @@
   width: 100%;
   height: 100%;
   margin-top: 50px;
-  background: linear-gradient(180deg, rgba(246, 246, 246, 1) 0%, rgb(44, 66, 149) 50%);
-
+  background: linear-gradient(
+    180deg,
+    rgba(246, 246, 246, 1) 0%,
+    rgb(44, 66, 149) 50%
+  );
 }
-.waveContainer{
-    width: 100%;
-    position: relative;
+.waveContainer {
+  width: 100%;
+  position: relative;
 }
 .imageWave {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 .waveClaire {
-    width: 100%;
-    top: 33vw;
-    object-fit: cover;
-    position: absolute;
+  width: 100%;
+  top: 33vw;
+  object-fit: cover;
+  position: absolute;
 }
 .wave {
-    width: 100%;
-    top: 38vw;
-    object-fit: cover;
-    z-index: 2;
-    position: absolute;
+  width: 100%;
+  top: 38vw;
+  object-fit: cover;
+  z-index: 2;
+  position: absolute;
 }
-.logoContainer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
-    top: 350px;
-    background-color: #3696F7;
+.logoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  top: 350px;
+  background-color: #3696f7;
 }
-.fullIcon{
-    margin-bottom: 80px;
+.fullIcon {
+  margin-bottom: 80px;
 }
-.iconImg{
+.iconImg {
 }
-.iconNumber{
-    margin: 0;
-    margin-top: 20px;
+.iconNumber {
+  margin: 0;
+  margin-top: 20px;
 }
-.iconText{
-    margin: 0;
+.iconText {
+  margin: 0;
 }
-.test{
-    background-image: url("../assets/wave.svg");
-    background-size: cover;
+.test {
+  background-image: url("../assets/wave.svg");
+  background-size: cover;
 }
 .customshapedividertop {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: scaleX(-1);
-    z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: scaleX(-1);
+  z-index: 2;
 }
-.shapeFill{
-    fill:#3696F7;
+.shapeFill {
+  fill: #3696f7;
 }
 .customshapedividertop2 {
-    position: absolute;
-    bottom: 2rem;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    rotate: 0deg;
-    transform: scaleX(-1);
-    line-height: 0;
-    z-index: 1;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  rotate: 0deg;
+  transform: scaleX(-1);
+  line-height: 0;
+  z-index: 1;
 }
-.waveBackground{
-    position: absolute;
-    height: 400px;
-    z-index: 3;
-    top: 10rem;
-    width: 100%;
+.waveBackground {
+  position: absolute;
+  height: 400px;
+  z-index: 3;
+  top: 10rem;
+  width: 100%;
 }
-.pohotContainer{
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: auto;
+.pohotContainer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
 }
-.downWave{
-    rotate: 180deg;
+.downWave {
+  rotate: 180deg;
 }
 .customshapedividertop3 {
-    position: absolute;
-    bottom: 2rem;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    rotate: 0deg;
-    transform: scaleX(-1);
-    line-height: 0;
-    z-index: 1;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  rotate: 0deg;
+  transform: scaleX(-1);
+  line-height: 0;
+  z-index: 1;
 }
-.references{
-    color: white;
-    position: absolute;
-    z-index: 200;
-    width: 100%;
-    text-align: center;
-    font-family: work sans;
-    font-weight: bold;
-    font-size: 40px;
+.references {
+  color: white;
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  text-align: center;
+  font-family: work sans;
+  font-weight: bold;
+  font-size: 40px;
 }
-.referenceContainer{
-    background: linear-gradient(180deg, rgba(44,66,149,1) 60%, rgba(246,246,246,1) 100%);    
-    width: 100%;
-    padding-top: 45%;
+.referenceContainer {
+  background: linear-gradient(
+    180deg,
+    rgba(44, 66, 149, 1) 60%,
+    rgba(246, 246, 246, 1) 100%
+  );
+  width: 100%;
+  padding-top: 45%;
 }
-.referenceMap{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.referenceMap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.reference{
-    width: 80%;
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.reference {
+  width: 80%;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.referenceImage{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px;
+.referenceImage {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
 }
-.referenceText{
-    color: white;
-    font-family: inter;
-    font-weight: 400;
-    font-size: 24px;
-    width: 80%;
+.referenceText {
+  color: white;
+  font-family: inter;
+  font-weight: 400;
+  font-size: 24px;
+  width: 80%;
 }
-.moreInformation{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
+.moreInformation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
 }
-.moreTitle{
-    font-family: work sans;
-    font-size: 24px;
-    font-weight: bold;
-    color: #2C4295;
-    width: 50%;
-    margin: 0;
+.moreTitle {
+  font-family: work sans;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c4295;
+  width: 50%;
+  margin: 0;
 }
-.moreText{
-    color: #2C4295;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: work sans;
-    width: 50%;
-    margin: 0;
-    margin-top: 10px;
+.moreText {
+  color: #2c4295;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: work sans;
+  width: 50%;
+  margin: 0;
+  margin-top: 10px;
 }
-.moreInformationBtn{
+.moreInformationBtn {
   border: none;
   color: white;
-  background-color: #0066FF;
+  background-color: #0066ff;
   font-family: work sans;
   font-size: 16px;
   border-radius: 5px;
   margin-top: 60px;
   padding: 10px;
 }
-.gradient2{
+.gradient2 {
   display: none;
 }
-.formBackgroundDesktop{
+.formBackgroundDesktop {
   display: none;
 }
 
@@ -322,29 +329,33 @@
   height: 40px;
 }
 
-@media only screen and (min-width: 1000px){
-  .ATservicesMainContainer{
+@media only screen and (min-width: 1000px) {
+  .ATservicesMainContainer {
     display: none;
   }
-.gradient2{
-  display: block;
-  width: 100%;
-  position: absolute;
-  height: 400px;
-  background: linear-gradient(180deg, rgba(246, 246, 246,1) 20%, rgba(255,255,255,0) 100%);
-}
-.imageWave{
-  display: none;
-}
-.formBackgroundDesktop{
-  display: block;
-  width: 100%;
-  object-fit: cover;
-}
-.logoContainer{
-  flex-direction: row;
-}
-.fullIcon{
-  margin-right: 100px;
-}
+  .gradient2 {
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 400px;
+    background: linear-gradient(
+      180deg,
+      rgba(246, 246, 246, 1) 20%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  .imageWave {
+    display: none;
+  }
+  .formBackgroundDesktop {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+  .logoContainer {
+    flex-direction: row;
+  }
+  .fullIcon {
+    margin-right: 100px;
+  }
 }

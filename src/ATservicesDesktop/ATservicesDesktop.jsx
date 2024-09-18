@@ -13,15 +13,16 @@ import reference from "../assets/reference.jpg";
 import Footer from "../footer/Footer";
 import aboutPicture from "../assets/aboutPicture.jpeg";
 import avenir from "../assets/avenir.svg";
-import Values from '../OurValues/OurValues';
-import Ressources from '../Ressources/Ressources'
+import Values from "../OurValues/OurValues";
+import Ressources from "../Ressources/Ressources";
 import { useEffect } from "react";
+import AboutUs from "../AboutUs/AboutUs";
 
 export default function ATservicesDesktop() {
   const displayed = window.innerWidth;
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   const iconTab = [
     {
       icon: sale,
@@ -63,13 +64,13 @@ export default function ATservicesDesktop() {
   function scroll(text) {
     const element = document.getElementById(text);
     if (element) {
-        const { top } = element.getBoundingClientRect();
-        const offset = top + window.scrollY - 100; // Décalage de 100 pixels au-dessus de l'élément
-        setTimeout(() => {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            window.scrollTo({ top: offset, behavior: 'smooth' });
-        }, 100);
-        console.log(text);
+      const { top } = element.getBoundingClientRect();
+      const offset = top + window.scrollY - 100; // Décalage de 100 pixels au-dessus de l'élément
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+        window.scrollTo({ top: offset, behavior: "smooth" });
+      }, 100);
+      console.log(text);
     }
   }
   return (
@@ -77,7 +78,10 @@ export default function ATservicesDesktop() {
       <NavMobile />
       <NavBarDesktop />
       <section className={styles.ATservicesheader}>
-        <div className={styles.mainPicture}  id={displayed > 1000 ? "atserviceshome" : null}>
+        <div
+          className={styles.mainPicture}
+          id={displayed > 1000 ? "atserviceshome" : null}
+        >
           <img src={ATservicesMain} alt="" className={styles.formBackground} />
           <div className={styles.gradient}></div>
           <div className={styles.textContainer}>
@@ -85,26 +89,34 @@ export default function ATservicesDesktop() {
               Nous bâtissons <br /> Nous nous engageons sur la qualité.
             </h2>
             <p className={styles.textIntroSecond}>
-              ATcompany est une entreprise professionnelle qui regroupe trois
-              entreprise: ATservices, ATimmobilier ainsi que ATpromotion. Nous
-              vous aidons a réaliser vos projets.
+              ATpartners est une entreprise professionnelle qui regroupe
+              plusieurs filiales: ATservices, ATimmobilier ainsi que
+              ATpromotion. Nous vous aidons a réaliser vos projets.
             </p>
           </div>
-            <button className={styles.discoverButton} onClick={()=>scroll("references")}>
-              Découvrir nos réalisations &nbsp; &nbsp; &gt;&gt;
-            </button>
+          <button
+            className={styles.discoverButton}
+            onClick={() => scroll("references")}
+          >
+            Découvrir nos réalisations &nbsp; &nbsp; &gt;&gt;
+          </button>
         </div>
       </section>
       <section className={styles.bodyContainer}>
         <div className={styles.aboutContainer}>
           <div className={styles.aboutTextMain}>
-            <h2 className={styles.aboutTitle} id="quisommesnous?">Qui sommes-nous ?</h2>
+            <h2 className={styles.aboutTitle} id="quisommesnous?">
+              Qui sommes-nous ?
+            </h2>
             <p>
               Nous nous adaptons aux mieux à vos besoins et mettons nos
               compétences à votre service.
             </p>
             <p>Découvrez notre équipe et nos valeurs et nos réalisations.</p>
-            <button className={styles.discoverButton2} onClick={()=>scroll("nosmoyenshumains")}>
+            <button
+              className={styles.discoverButton2}
+              onClick={() => scroll("nosmoyenshumains")}
+            >
               Découvir nos équipes &nbsp; &nbsp; &gt;&gt;
             </button>
           </div>
@@ -112,7 +124,7 @@ export default function ATservicesDesktop() {
             <hr className={styles.hr} />
             <img src={aboutPicture} alt="" className={styles.aboutPicture} />
             <p className={styles.aboutText}>
-              ATServices est une entreprise de BTP qui intervient dans le
+              ATpartners est une entreprise de BTP qui intervient dans le
               domaine d’installation de panneaux sandwich et menuiseries
               isothermes. Avec une expérience de 15 ans dans ce domaine,
               Valentin Espace de Vie maîtrise tous les types d’isolation, qu’il
@@ -218,12 +230,12 @@ export default function ATservicesDesktop() {
               </div>
             </div>
           </div>
-          <hr className={styles.referenceHr} id="references"/>
-          <p className={styles.references}>Réferences</p>
+          {/* <hr className={styles.referenceHr} id="references" /> */}
+          {/* <p className={styles.references}>Réferences</p> */}
         </div>
       </section>
       <section className={styles.referenceContainer}>
-        <div className={styles.referenceMap}>
+        {/* <div className={styles.referenceMap}>
           {referencesTab.map((reference, index) => (
             <div
               key={index}
@@ -237,7 +249,7 @@ export default function ATservicesDesktop() {
               <p className={styles.referenceText}>{reference.text}</p>
             </div>
           ))}
-        </div>
+        </div> */}
         <div className={styles.moreInformation}>
           <h2 className={styles.moreTitle}>
             Vous souaithez en savoir plus sur ATservices ?
@@ -252,27 +264,33 @@ export default function ATservicesDesktop() {
         </div>
       </section>
       <section className={styles.objectifs}>
-        <h2 className={styles.ourObjectifs} id="nosobjectifs" >Nos objectifs</h2>
+        <AboutUs />
+        <h2 className={styles.ourObjectifs} id="nosobjectifs">
+          Nos objectifs
+        </h2>
         <div className={styles.aveirContainer}>
           <img src={avenir} alt="" className={styles.avenirImg} />
           <p className={styles.avenirText}>
-            La société Valentin Espace de Vie connait un réel succès depuis sa
-            création en 2008 et devient une entreprise incontournable du
-            secteur. Les objectifs de développement ont été atteints chaque
-            année et la société se place déjà parmi les entreprises française
-            les plus connues et appréciées dans le domaine de montage de
-            panneaux et menuiseries isothermes.
+            La société ATpartners connait un réel succès depuis sa création en
+            2022 et devient une entreprise incontournable du secteur. Les
+            objectifs de développement ont été atteints chaque année et la
+            société se place déjà parmi les entreprises française les plus
+            connues et appréciées dans le domaine de montage de panneaux et
+            menuiseries isothermes.
           </p>
         </div>
         <div className={styles.objectifsContainer}>
           <img src={avenir} alt="" className={styles.objectifsImg} />
           <p className={styles.objectifsText}>
-            La société Valentin Espace de Vie connait un réel succès depuis sa
-            création en 2008 et devient une entreprise incontournable du
-            secteur. Les objectifs de développement ont été atteints chaque
-            année et la société se place déjà parmi les entreprises française
-            les plus connues et appréciées dans le domaine de montage de
-            panneaux et menuiseries isothermes.
+            Fidéliser et développer la clientèle : L'entreprise souhaite
+            maintenir sa clientèle existante tout en développant de nouvelles
+            relations avec d'autres clients potentiels. <br /> <br /> Ouvrir une
+            succursale dans le sud de la France : Cela permettra une plus grande
+            mobilité des équipes de l'entreprise et offrira un contact plus
+            étroit avec les clients de cette région. <br />
+            <br /> Se développer dans toute la communauté de l'UE : L'entreprise
+            vise à étendre son activité au-delà des frontières nationales pour
+            atteindre un marché plus large au sein de l'Union européenne.
           </p>
         </div>
         <Values />

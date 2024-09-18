@@ -1,213 +1,212 @@
-.valuesSection{
-display: flex;
-flex-direction: column;
-align-items: center ;
+.valuesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.valuesHeader{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 45%;
-    background-color: #2C4295;
-    border-radius: 10px;
-    padding: 30px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+.valuesHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  background-color: #2c4295;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-shadow: 6px 7px 7px grey;
 }
-.valuesTitle{
-    color: white;
-    font-size: 36px;
-    font-family: mitr;
-    font-weight: 400;
-    width: fit-content;
-    margin-bottom: 10px;
+.valuesTitle {
+  color: white;
+  font-size: 36px;
+  font-family: mitr;
+  font-weight: 400;
+  width: fit-content;
+  margin-bottom: 10px;
 }
-.valuesText{
-    color: white;
-    font-family: mitr;
-    font-size: 18px;
-    width: 100%;
+.valuesText {
+  color: white;
+  font-family: mitr;
+  font-size: 18px;
+  width: 100%;
 }
-.valuesAllLogos{
-    display: flex;
-    width: 100%;
-    background-color: transparent;
-    position: relative;
+.valuesAllLogos {
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
 }
-.valuesImg{
+.valuesImg {
 }
-.test{
-    position: absolute;
-    background-color: white;
-    width: 100%;
-    z-index: -1;
+.test {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  z-index: -1;
 }
-.logoMain{
-    display: flex;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: mitr;
-    position: relative;
-    margin-bottom: 50px;
+.logoMain {
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: mitr;
+  position: relative;
+  margin-bottom: 50px;
+}
+.logoContainer {
+  margin-top: 200px;
+}
+.logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // background-color: #0556CE;
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 100px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.logoImg {
+  // background-color: #0556CE;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  top: -65px;
+  border: solid 3px white;
+}
+.logoTextContainer {
+  color: white;
+  font-weight: 400;
+  font-family: mitr;
+  font-size: 24px;
+}
+.logoNumber {
+  text-align: center;
+  margin: 0;
+}
+.logoText {
+  text-align: center;
+  margin: 0;
+}
+.logoContent {
+  width: 500px;
+  margin-left: 100px;
+}
 
+.logoMain.index0 {
+  width: fit-content;
+  margin-left: 27vw;
 }
-.logoContainer{
-    margin-top: 200px;
-
+.logoMain.index1 {
+  width: fit-content;
+  margin-left: 34vw;
 }
-.logo{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    // background-color: #0556CE;
-    border-radius: 20px;
-    width: 250px;
-    height: 250px;
-    margin-bottom: 100px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.logoMain.index2 {
+  width: fit-content;
+  margin-left: 27vw;
 }
-.logoImg{
-// background-color: #0556CE;
-border-radius: 50%;
-padding: 10px;
-position: absolute;
-top: -65px;
-border: solid 3px white;
-}
-.logoTextContainer{
-    color: white;
-    font-weight: 400;
-    font-family: mitr;
-    font-size: 24px;
-}
-.logoNumber{
-    text-align: center;
-    margin: 0;
-}
-.logoText{
-    text-align: center;
-    margin: 0;
-}
-.logoContent{
-    width: 500px;
-    margin-left: 100px;
-}
-
-.logoMain.index0{
-    width: fit-content;
-    margin-left: 27vw;
-}
-.logoMain.index1{
-    width: fit-content;
-    margin-left:34vw;
-}
-.logoMain.index2{
-    width: fit-content;
-    margin-left: 27vw;
-}
-.logoMain.index3{
-    width: fit-content;
-    margin-left: 34vw;
+.logoMain.index3 {
+  width: fit-content;
+  margin-left: 34vw;
 }
 .hr {
-    border: none;
-    border-top: solid 2px #2C4295;
-    color: #2C4295;
-    overflow: visible;
-    left: 0%;
-    top: 16rem;
-    width: 100%;
-    position: absolute;
-  }
-  .hr::after {
-    background: transparent;
-    position: relative;
-    font-weight: bold;
-    color: #2C4295;
-    width: 50px;
-    top: -22px;
-    transform: rotate(90deg);
-  }
+  border: none;
+  border-top: solid 2px #2c4295;
+  color: #2c4295;
+  overflow: visible;
+  left: 0%;
+  top: 16rem;
+  width: 100%;
+  position: absolute;
+}
+.hr::after {
+  background: transparent;
+  position: relative;
+  font-weight: bold;
+  color: #2c4295;
+  width: 50px;
+  top: -22px;
+  transform: rotate(90deg);
+}
 
-  @media screen and (max-width: 1000px) {
-    .valuesSection{
-        width: 100%;
-    }
-    .valuesHeader{
-        width: 100%;
-        margin-bottom: 0px;
-    }
-    .valuesTitle{
-        font-size: 24px;
-        width: 80%;
-        text-align: center;
-    }
-    .valuesText{
-        font-size: 18px;
-        width: 80%;
-    }
-    .hr{
-        display: none;
-    }
-    .logo{
-        width: 75px;
-        height: 75px;
-         float: left;
-        margin-bottom: 0px;
-        margin-right: 10px;
-    }
-    .logoImg{
-        top: -24px;
-        width: 20px;
-    }
-    .logoTextContainer{
-        font-size: 18px;
-    }
-    .logoText{
-        font-size: 14px;
-    }
-    .logoNumber{
-        margin-top: 15px;
-    }
-    .logoMain{
-        background-color: #e7e7e7af;
-        border-radius: 10px;
-        padding: 50px;
-        box-sizing: border-box;
-    }
-    .logoMain.index0{
-        margin-left: 0px;
-        display: block;
-        padding: 20px;
-        padding-top: 30px;
-    }
-    .logoMain.index1{
-        margin-left: 0px;
-        display: block;
-        padding: 20px;
-        padding-top: 30px;
-    }
-    .logoMain.index2{
-        margin-left: 0px;
-        display: block;
-        padding: 20px;
-        padding-top: 30px;
-    }
-    .logoMain.index3{
-        margin-left: 0px;
-        display: block;
-        padding: 20px;
-        padding-top: 30px;
-    }
-    .logoContent{
-        width: 350px;
-        margin: 0;
-    }
-    .valuesAllLogos{
-        flex-direction: column;
-        align-items: center;
-    }
+@media screen and (max-width: 1000px) {
+  .valuesSection {
+    width: 100%;
   }
+  .valuesHeader {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .valuesTitle {
+    font-size: 24px;
+    width: 80%;
+    text-align: center;
+  }
+  .valuesText {
+    font-size: 18px;
+    width: 80%;
+  }
+  .hr {
+    display: none;
+  }
+  .logo {
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+  .logoImg {
+    top: -24px;
+    width: 20px;
+  }
+  .logoTextContainer {
+    font-size: 18px;
+  }
+  .logoText {
+    font-size: 14px;
+  }
+  .logoNumber {
+    margin-top: 15px;
+  }
+  .logoMain {
+    background-color: #e7e7e7af;
+    border-radius: 10px;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  .logoMain.index0 {
+    margin-left: 0px;
+    display: block;
+    padding: 20px;
+    padding-top: 30px;
+  }
+  .logoMain.index1 {
+    margin-left: 0px;
+    display: block;
+    padding: 20px;
+    padding-top: 30px;
+  }
+  .logoMain.index2 {
+    margin-left: 0px;
+    display: block;
+    padding: 20px;
+    padding-top: 30px;
+  }
+  .logoMain.index3 {
+    margin-left: 0px;
+    display: block;
+    padding: 20px;
+    padding-top: 30px;
+  }
+  .logoContent {
+    width: 350px;
+    margin: 0;
+  }
+  .valuesAllLogos {
+    flex-direction: column;
+    align-items: center;
+  }
+}

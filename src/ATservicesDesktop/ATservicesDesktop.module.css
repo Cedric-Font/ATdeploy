@@ -21,7 +21,7 @@
 }
 
 .gradient {
-  background: linear-gradient(90deg, rgb(44, 66, 149) 0%, rgba(37, 129, 196, 0.43) 100%);
+  background: linear-gradient(90deg, rgba(44, 67, 149, 0.58) 0%, rgba(37, 130, 196, 0) 100%);
   width: 100%;
   height: 900px;
   position: absolute;
@@ -104,7 +104,7 @@
   color: white;
   padding: 50px;
   box-sizing: border-box;
-  background-color: #00ACE3;
+  background-color: #00ace3;
   margin-top: 30px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -171,7 +171,7 @@
   font-weight: bold;
   text-align: center;
   top: 350px;
-  background-color: #3696F7;
+  background-color: #3696f7;
 }
 
 .fullIcon {
@@ -215,7 +215,7 @@
 }
 
 .shapeFill {
-  fill: #3696F7;
+  fill: #3696f7;
 }
 
 .customshapedividertop2 {
@@ -318,13 +318,13 @@
   font-family: work sans;
   font-size: 24px;
   font-weight: bold;
-  color: #2C4295;
+  color: #2c4295;
   width: 50%;
   margin: 0;
 }
 
 .moreText {
-  color: #2C4295;
+  color: #2c4295;
   font-size: 16px;
   font-weight: 400;
   font-family: work sans;
@@ -336,7 +336,7 @@
 .moreInformationBtn {
   border: none;
   color: white;
-  background-color: #0066FF;
+  background-color: #0066ff;
   font-family: work sans;
   font-size: 16px;
   border-radius: 5px;
@@ -353,6 +353,10 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .objectifs {
+    margin-top: -27rem;
+    position: relative;
+  }
   .aboutTitle {
     font-size: 35px;
     text-align: start;
@@ -390,7 +394,7 @@
     flex-direction: column;
     font-size: 30px;
     font-weight: medium bold;
-    color: #2C4295;
+    color: #2c4295;
     width: 450px;
     padding: 50px;
     padding-top: 0px;
@@ -425,8 +429,8 @@
   }
   .hr {
     border: none;
-    border-top: solid 3px #2C4295;
-    color: #2C4295;
+    border-top: solid 3px #2c4295;
+    color: #2c4295;
     overflow: visible;
     left: -58%;
     top: 19rem;
@@ -438,7 +442,7 @@
     background: transparent;
     position: relative;
     font-weight: bold;
-    color: #2C4295;
+    color: #2c4295;
     width: 50px;
     top: -22px;
     transform: rotate(90deg);
@@ -456,7 +460,7 @@
     width: 390px;
     bottom: -3rem;
     left: 20%;
-    color: #2C4295;
+    color: #2c4295;
     border-radius: 10px;
     position: absolute;
     -webkit-backdrop-filter: blur(4px);
@@ -485,7 +489,12 @@
     justify-content: center;
     display: flex;
     flex-direction: row;
+    padding: 20px;
     gap: 50px;
+    background-color: rgba(255, 255, 255, 0.168627451);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    box-shadow: 5px 4px 12px rgba(255, 255, 255, 0.8588235294);
   }
   .referenceHr {
     border: none;
@@ -510,7 +519,7 @@
     top: -30px;
     font-family: work sans;
     display: inline;
-    background-color: #3696F7;
+    background-color: #3696f7;
   }
   .references {
     display: none;
@@ -545,7 +554,7 @@
   .reference.index1 .referenceText {
     margin-right: 50px;
     text-align: right;
-    color: #2C4295;
+    color: #2c4295;
   }
   .reference.index2 {
     position: static;
@@ -556,7 +565,7 @@
   }
   .reference.index2 .referenceText {
     margin-left: 50px;
-    color: #2C4295;
+    color: #2c4295;
   }
   .referenceImage {
     min-width: 450px;
@@ -579,20 +588,23 @@
   }
   .ourObjectifs {
     margin-top: 100px;
+    margin-bottom: 5rem;
     text-align: center;
-    color: #2C4295;
+    color: white;
+    background-color: #2c4295;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 50px;
     font-family: work sans;
   }
   .aveirContainer {
     display: flex;
     position: relative;
+    margin-bottom: 100px;
   }
   .avenirImg {
     min-width: 500px;
     width: 20%;
-    margin-left: 25%;
+    margin-left: 19%;
   }
   .avenirText {
     min-width: 490px;
@@ -603,13 +615,14 @@
     border-radius: 10px;
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
-    color: #2C4295;
+    color: #2c4295;
     font-weight: 500;
     font-family: work sans;
     padding: 20px;
     position: absolute;
-    left: 35%;
+    left: 40%;
     bottom: 20px;
+    box-shadow: 6px 7px 7px grey;
   }
   .objectifsContainer {
     display: flex;
@@ -619,7 +632,7 @@
   .objectifsImg {
     min-width: 500px;
     width: 20%;
-    margin-right: 25%;
+    margin-right: 19%;
   }
   .objectifsText {
     min-width: 490px;
@@ -630,12 +643,13 @@
     border-radius: 10px;
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
-    color: #2C4295;
+    color: #2c4295;
     font-weight: 500;
     font-family: work sans;
     padding: 20px;
     position: absolute;
-    right: 35%;
+    right: 40%;
     bottom: 20px;
+    box-shadow: 6px 7px 7px grey;
   }
 }/*# sourceMappingURL=ATservicesDesktop.module.css.map */

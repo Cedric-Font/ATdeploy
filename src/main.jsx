@@ -1,15 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { StyledEngineProvider } from '@mui/material/styles';
-import Footer from './footer/Footer.jsx';
-import './index.css';
-import Form from './form/Form.jsx';
-import Atservices from './ATservices/Atservices.jsx';
-import ATservicesDesktop from './ATservicesDesktop/ATservicesDesktop.jsx';
-import AboutATservices from './aboutATservices/AboutATservices.jsx';
-import Soon from './soon/Soon.jsx';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { StyledEngineProvider } from "@mui/material/styles";
+import Footer from "./footer/Footer.jsx";
+import "./index.css";
+import Form from "./form/Form.jsx";
+import Atservices from "./ATservices/Atservices.jsx";
+import ATservicesDesktop from "./ATservicesDesktop/ATservicesDesktop.jsx";
+import AboutATservices from "./aboutATservices/AboutATservices.jsx";
+import Soon from "./soon/Soon.jsx";
 
 const router = createBrowserRouter(
   [
@@ -27,19 +27,24 @@ const router = createBrowserRouter(
     },
     {
       path: "/ATservices",
-      element:<> <Atservices /> <ATservicesDesktop /> </>, 
+      element: (
+        <>
+          {" "}
+          <Atservices /> <ATservicesDesktop />{" "}
+        </>
+      ),
     },
     {
       path: "/AboutATservices",
-      element:<AboutATservices />, 
+      element: <AboutATservices />,
     },
     {
       path: "/ATimmobilier",
-      element:<Soon />, 
+      element: <Soon />,
     },
     {
       path: "/ATpromotion",
-      element:<Soon />, 
+      element: <Soon />,
     },
   ],
   {
@@ -47,7 +52,7 @@ const router = createBrowserRouter(
   }
 );
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <StyledEngineProvider injectFirst>
       <RouterProvider router={router} />

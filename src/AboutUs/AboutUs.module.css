@@ -77,7 +77,7 @@
 .overText {
   font-family: work sans;
   font-size: 36px;
-  color: #0556CE;
+  color: #0556ce;
   font-weight: bold;
   margin: 0px;
   text-shadow: 1px 1px 2px rgba(5, 5, 5, 0.49);
@@ -86,7 +86,7 @@
 .overSubText {
   font-family: work sans;
   font-size: 14px;
-  color: #0556CE;
+  color: #0556ce;
   margin: 0px;
   text-shadow: 1px 1px 2px rgba(5, 5, 5, 0.49);
 }
@@ -129,6 +129,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding-inline: 10%;
+    gap: 7rem;
   }
   .aboutContainer {
     width: 50%;
@@ -171,7 +173,7 @@
     padding-right: 250px;
   }
   .aboutContainer2 {
-    width: 40%;
+    width: 50%;
     margin-left: 250px;
   }
   .textContainer2 {
@@ -186,6 +188,10 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    box-sizing: border-box;
+    padding-inline: 10%;
+    gap: 7rem;
+    margin-top: 20%;
   }
   .aboutContainer {
     width: 50%;
@@ -221,12 +227,12 @@
     font-size: 48px;
   }
   .aboutContainer {
-    width: 40%;
+    width: 50%;
     border-radius: 10px;
     position: absolute;
     z-index: 1;
     top: 26%;
-    max-width: 400px;
+    max-width: 450px;
     left: 50%;
     right: 50%;
     -webkit-backdrop-filter: blur(4px);
@@ -245,7 +251,7 @@
     padding-right: 0px;
   }
   .aboutContainer2 {
-    width: 40%;
+    width: 50%;
     margin-left: 150px;
     position: absolute;
     -webkit-backdrop-filter: blur(4px);
@@ -253,9 +259,10 @@
     background: linear-gradient(90deg, rgb(12, 109, 255) 0%, rgba(6, 59, 175, 0.502) 100%);
     border-radius: 10px;
     left: 0%;
+    top: 26%;
   }
   .textContainer2 {
-    left: 40%;
+    left: 33%;
     margin-top: 70px;
   }
 }/*# sourceMappingURL=AboutUs.module.css.map */
