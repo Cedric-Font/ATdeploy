@@ -65,7 +65,7 @@ export default function NavBarDesktop() {
           </Link>
           <Link
             to={{
-              pathname: "/ATservices",
+              pathname: "/realisations",
             }}
           >
             <li
@@ -78,7 +78,7 @@ export default function NavBarDesktop() {
         <div className={styles.contactButtonContainer}>
           <Link
             to={{
-              pathname: "contact",
+              pathname: "/contact",
             }}
           >
             <button className={styles.contactutton}>Contact</button>

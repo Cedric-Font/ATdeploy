@@ -17,7 +17,7 @@
 
 .RealisationsTitle {
   text-align: center;
-  color: #0556CE;
+  color: #0556ce;
   font-family: inter;
   font-size: 48px;
   font-weight: bold;
@@ -60,7 +60,7 @@
 
 .reverseRealisationsTitle {
   text-align: center;
-  color: #0556CE;
+  color: #0556ce;
   font-family: inter;
   font-size: 48px;
   font-weight: bold;
@@ -104,6 +104,106 @@
   transform: scale(1);
 }
 
+.galeryContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.mapPhotoContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 50px;
+  padding-right: 10%;
+  padding-left: 10%;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.photoContainer {
+  width: 400px;
+  transition: scale 250ms ease;
+}
+
+.photoContainer:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+
+.photo {
+  width: 400px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.fullscreenOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Fond sombre transparent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10001;
+}
+
+.fullscreenImage {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.galeryTitle {
+  margin-top: 50px;
+  color: #0a60e1;
+  width: 100%;
+  text-align: center;
+  font-size: 34px;
+}
+
+.galeryTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #0556ce;
+  position: relative;
+  text-transform: uppercase;
+  margin: 40px 0;
+}
+
+.galeryTitle::before,
+.galeryTitle::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #0556ce; /* Couleur de la ligne */
+  margin: 0 20px;
+}
+
 @media screen and (min-width: 1000px) {
   .mainRealisationContainer {
     display: flex;
@@ -137,14 +237,14 @@
   .RealisationsTitle {
     margin-bottom: 25%;
     margin-top: 5%;
-    color: #0556CE;
+    color: #0556ce;
     font-size: 32px;
     font-family: inter;
     font-weight: bold;
     text-align: start;
   }
   .RealisationsContent {
-    color: #0556CE;
+    color: #0556ce;
     font-family: inter;
     font-size: 20px;
     margin: 0;
@@ -173,7 +273,7 @@
   }
   .reverseRealisationsText {
     position: static;
-    background-color: #0A60E1;
+    background-color: #0a60e1;
     padding-left: 100px;
     display: flex;
     flex-direction: column;

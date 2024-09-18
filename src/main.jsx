@@ -10,6 +10,7 @@ import Atservices from "./ATservices/Atservices.jsx";
 import ATservicesDesktop from "./ATservicesDesktop/ATservicesDesktop.jsx";
 import AboutATservices from "./aboutATservices/AboutATservices.jsx";
 import Soon from "./soon/Soon.jsx";
+import Realisations from "./realisations/Realisations.jsx";
 
 const router = createBrowserRouter(
   [
@@ -33,6 +34,10 @@ const router = createBrowserRouter(
           <Atservices /> <ATservicesDesktop />{" "}
         </>
       ),
+    },
+    {
+      path: "/realisations",
+      element: <Realisations />,
     },
     {
       path: "/AboutATservices",

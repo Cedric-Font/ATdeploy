@@ -13,6 +13,7 @@ import HeaderContent from "./HeaderContent/HeaderContent";
 import EnterprisesLinkPicturesIphone from "./EnterprisesLinkpictureIphone/EnterprisesLinkpictureIphone";
 import ATmain from "./assets/ATpartnersMain.jpg";
 import TestAbout from "./testAbout/TestAbout";
+import ATservicesDesktop from "./ATservicesDesktop/ATservicesDesktop";
 
 function App() {
   const [userAgent, setUserAgent] = useState("");
@@ -34,37 +35,17 @@ function App() {
 
   return (
     <div id="home">
-      <NavBarDesktop />
+      <ATservicesDesktop />
+      {/* <NavBarDesktop />
       <NavMobile />
       <HeaderContent mainPicture={ATmain} />
       <section className={styles.padding}>
-        {/* <SubTitle title={"Nos entreprises"} top={"600px"} /> */}
-        {/* <h2 className={styles.owerEnterprisesTitle}>Nos Entreprises</h2> */}
-        {/* <div className={styles.enterpriseLinkContainer}>
-          {userAgent === "iphone" ? (
-            <EnterprisesLinkPicturesIphone pictures={"ATservices"} />
-          ) : (
-            <EnterprisesLinkPictures pictures={"ATservices"} />
-          )}
-          {userAgent === "iphone" ? (
-            <EnterprisesLinkPicturesIphone pictures={"ATimmobilier"} />
-          ) : (
-            <EnterprisesLinkPictures pictures={"ATimmobilier"} />
-          )}
-          {userAgent === "iphone" ? (
-            <EnterprisesLinkPicturesIphone pictures={"ATpromotion"} />
-          ) : (
-            <EnterprisesLinkPictures pictures={"ATpromotion"} />
-          )}
-        </div> */}
-        {/* <h2 className={styles.owerEnterprisesTitleAbout}>qui somme nous ?</h2> */}
         <SubTitle
           title={"Qui sommes nous ?"}
           top={"100px"}
           userAgent={userAgent}
         />
         <AboutUs />
-        {/* <TestAbout /> */}
         <SubTitle title={"Nos realisations"} top={"100px"}></SubTitle>
         <Realisations
           title={"Salle blanche"}
@@ -88,8 +69,8 @@ function App() {
           }
           picture={salleBlanche}
         />
-        <Footer title={"ATservices"}></Footer>
-      </section>
+        <Footer title={"ATservices"}></Footer> 
+      </section> */}
     </div>
   );
 }

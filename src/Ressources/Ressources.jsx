@@ -27,7 +27,11 @@ export default function Ressources() {
           et efficacité des équipes et permet de réaliser de 10 à 15 projets
           simultanément.
         </p>
-        <img src={formBackground} alt="" className={styles.ressourcesBackground}/>
+        <img
+          src={formBackground}
+          alt=""
+          className={styles.ressourcesBackground}
+        />
       </section>
     </>
   );
