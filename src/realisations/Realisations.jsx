@@ -3,6 +3,7 @@ import { useState } from "react";
 import NavBarDesktop from "../navBarDesktop/NavBarDesktop";
 import AtservicesHeader from "../aboutATservices/atservicesHeader/AtservicesHeader";
 import AtservicesImg from "../assets/AtservicesHeader.jpg";
+import Footer from "../footer/Footer";
 
 export default function Realisations() {
   const [selectedPhoto, setSelectedPhoto] = useState(null); // État pour la photo sélectionnée
@@ -85,6 +86,7 @@ export default function Realisations() {
           </button>
         </div>
       )}
+      <Footer />
     </>
   );
 }

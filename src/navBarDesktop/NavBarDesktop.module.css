@@ -119,6 +119,14 @@ li:hover {
   margin-right: 3%;
 }
 
+.navUlContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 34%;
+  font-size: 14px;
+}
+
 @media screen and (max-width: 1000px) {
   .stickyNav {
     display: none;

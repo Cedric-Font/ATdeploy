@@ -352,6 +352,14 @@
   display: none;
 }
 
+.enterpriseLinkContainer {
+  display: flex;
+  width: 100%;
+  padding-inline: 20%;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
 @media only screen and (min-width: 1000px) {
   .objectifs {
     margin-top: -27rem;
@@ -590,11 +598,18 @@
     margin-top: 100px;
     margin-bottom: 5rem;
     text-align: center;
-    color: white;
-    background-color: #2c4295;
+    color: #2c4295;
     font-weight: 600;
     font-size: 50px;
     font-family: work sans;
+  }
+  .ourObjectifs::before,
+  .ourObjectifs::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #0556ce; /* Couleur de la ligne */
+    margin: 0 20px;
   }
   .aveirContainer {
     display: flex;

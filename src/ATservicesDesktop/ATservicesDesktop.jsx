@@ -17,6 +17,7 @@ import Values from "../OurValues/OurValues";
 import Ressources from "../Ressources/Ressources";
 import { useEffect } from "react";
 import AboutUs from "../AboutUs/AboutUs";
+import EnterprisesLinkPictures from "../EnterprisesLinkpicture/EnterprisesLinkPictures";
 
 export default function ATservicesDesktop() {
   const displayed = window.innerWidth;
@@ -296,6 +297,18 @@ export default function ATservicesDesktop() {
         <Values />
       </section>
       <Ressources />
+      <div>
+        <h2>Nos filliales</h2>
+        <p>
+          ATpartners est une holding regroupant 3 filliales, ATservices,
+          ATimmobilier, ATpromotion
+        </p>
+      </div>
+      <div className={styles.enterpriseLinkContainer}>
+        <EnterprisesLinkPictures pictures={"ATservices"} />
+        <EnterprisesLinkPictures pictures={"ATimmobilier"} />
+        <EnterprisesLinkPictures pictures={"ATpromotion"} />
+      </div>
       <Footer />
     </div>
   );

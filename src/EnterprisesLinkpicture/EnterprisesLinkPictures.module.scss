@@ -1,70 +1,84 @@
-.linksPictures{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-     height: 408px;
-     margin-bottom: 30px;
+.linksPictures {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 408px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden; /* Important pour limiter l'animation à l'intérieur de l'élément */
 }
-.link{
-    -webkit-box-align:center;
-     -webkit-box-pack:center;
-     display:-webkit-box;
-     text-decoration: none;
-}
-.ATpicture{
-    width: 375px;
-    height: 408px;
-    border-radius: 5px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    object-fit: cover;
-    position: absolute;
-}
-.ATtitle{
-    position: relative;
-    color: white;
-    font-family: inter;
-    font-size: 40px;
-    font-weight: bold;
-    width: 200px;
-    text-align: center;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
+.link {
+  display: flex;
+  position: relative;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Cache le contenu qui déborde */
+  width: 100%;
 }
+
+.ATpicture {
+  width: 375px;
+  height: 408px;
+  border-radius: 5px;
+  object-fit: cover;
+  position: relative;
+  transition: transform 250ms ease; /* Animation de zoom au hover */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.ATpicture:hover {
+  transform: scale(1.2); /* Zoom sur l'image au survol */
+}
+
+.ATtitle {
+  position: absolute;
+  color: white;
+  font-family: inter;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.hoverOverlay {
+  position: absolute;
+  bottom: -100%; /* Départ hors de l'image */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  backdrop-filter: blur(5px); /* Effet de flou */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: bottom 0.4s ease; /* Transition fluide */
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  z-index: 1;
+}
+
+.link:hover .hoverOverlay {
+  bottom: 0; /* Fait monter l'overlay au hover */
+}
+
 @media screen and (min-width: 1000px) {
-    .linksPictures{
-        height: 35vw;
-        display: flex;
-        justify-content: center;
-        // border: solid red;
-        width: 23%;
-        margin-right: 2%;
-        margin-left: 2%;
-        position: relative;
-        overflow: hidden;
-    }
-    .ATpicture{
-        width: 100%;
-        height: 35vw;
-        background-position: center;
-        transition: 250ms;
-        border-radius: 5px;
-    }
-    .ATpicture:hover{
-        transform: scale(1.2);
-    }
-    .ATtitle{
-        // display: none;
-        position: absolute;
-        top: 47%;
-        bottom: 50%;
-        height: fit-content;
-        margin: 0;
-    }
-    .link{
-        // border: solid green;
-        width: 100%;
-        // min-width: 375px;
-        display: flex;
-        justify-content: center;
-    }
+  .linksPictures {
+    height: 21vw;
+    width: 30%;
+    margin-right: 2%;
+    margin-left: 2%;
+    position: relative;
+  }
+
+  .ATpicture {
+    width: 100%;
+    height: 35vw;
+  }
+  .ATpicture:hover {
+    transform: scale(1); /* Zoom sur l'image au survol */
+  }
 }

@@ -51,7 +51,7 @@ export default function NavBarDesktop() {
             ATpartners
           </h2>
         </div>
-        <ul>
+        <ul className={styles.navUlContainer}>
           <Link
             to={{
               pathname: "/",
