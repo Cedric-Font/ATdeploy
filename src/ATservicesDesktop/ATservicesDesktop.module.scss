@@ -623,4 +623,45 @@
     bottom: 20px;
     box-shadow: 6px 7px 7px grey;
   }
+  // .fillialesHeader {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   margin-top: 100px;
+  //   margin-bottom: 50px;
+  //   width: 100%;
+  //   background-color: #3696f7;
+  // }
+  .fillialesHeader {
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+    width: 100%;
+  }
+
+  .fillialeTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    color: #2c4295;
+  }
+
+  .fillialeTitle::before,
+  .fillialeTitle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%; /* Ajuste la longueur de la ligne */
+    height: 2px; /* Épaisseur de la ligne */
+    background-color: #2c4295; /* Couleur de la ligne */
+  }
+
+  .fillialeTitle::before {
+    left: 50px; /* Ajuste la distance de la ligne à gauche */
+  }
+
+  .fillialeTitle::after {
+    right: 50px; /* Ajuste la distance de la ligne à droite */
+  }
 }

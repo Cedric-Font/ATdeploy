@@ -14,6 +14,7 @@ import EnterprisesLinkPicturesIphone from "./EnterprisesLinkpictureIphone/Enterp
 import ATmain from "./assets/ATpartnersMain.jpg";
 import TestAbout from "./testAbout/TestAbout";
 import ATservicesDesktop from "./ATservicesDesktop/ATservicesDesktop";
+import Atservices from "./ATservices/Atservices";
 
 function App() {
   const [userAgent, setUserAgent] = useState("");
@@ -36,6 +37,7 @@ function App() {
   return (
     <div id="home">
       <ATservicesDesktop />
+      <Atservices />
       {/* <NavBarDesktop />
       <NavMobile />
       <HeaderContent mainPicture={ATmain} />

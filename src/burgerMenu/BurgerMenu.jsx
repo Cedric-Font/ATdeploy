@@ -46,16 +46,29 @@ export default function TemporaryDrawer({ isScrolled }) {
       setOpen(false);
       return;
     }
+    if (text === "Nosréalisations") {
+      navigate(`/realisations`); // Redirige vers la racine avec l'ancre spécifiée
+      setOpen(false); // Ferme le menu déroulant après la navigation
+      console.log(text);
+      return;
+    }
     navigate(`/#${anchor}`); // Redirige vers la racine avec l'ancre spécifiée
     setOpen(false); // Ferme le menu déroulant après la navigation
     console.log(text);
   };
 
   const scrollToElementATservices = (text) => {
+    console.log(text);
     const anchor = text.toLowerCase().replace(/\s+/g, "");
     if (text === "Contact") {
       navigate("/contact");
       setOpen(false);
+      return;
+    }
+    if (text === "Nos réalisations") {
+      navigate(`/realisations`); // Redirige vers la racine avec l'ancre spécifiée
+      setOpen(false); // Ferme le menu déroulant après la navigation
+      console.log(text);
       return;
     }
     navigate(`/ATservices/#${anchor}`); // Redirige vers la racine avec l'ancre spécifiée
@@ -143,28 +156,6 @@ export default function TemporaryDrawer({ isScrolled }) {
           <img src={ATpartnersLogo} alt="" className={styles.ATpartnersLogo} />
           <h2 className={styles.burgerTitle}>ATPartners</h2>
         </div>
-        <h2 className={styles.BurgerSubTitle}>
-          <Link to={{ pathname: "/" }}>ATPartners</Link>
-        </h2>
-        {[
-          "Home",
-          "Nos entreprises",
-          "Nos realisations",
-          "Qui sommes nous ?",
-          "Contact",
-        ].map((text, index) => (
-          <ListItem key={text} disablePadding sx={{ marginLeft: "80px" }}>
-            <ListItemButton
-              sx={{ span: { width: "15rem" } }}
-              onClick={() => handleScrollTo(text)}
-            >
-              <ListItemText
-                primary={text}
-                sx={{ span: { fontWeight: "bold" } }}
-              />
-            </ListItemButton>
-          </ListItem>
-        ))}
       </List>
       <Divider
         sx={{
@@ -177,7 +168,6 @@ export default function TemporaryDrawer({ isScrolled }) {
         {[
           "ATServices home",
           "Qui sommes nous ?",
-          "references",
           "Nos objectifs",
           "Nos valeurs",
           "Nos moyens humains",
@@ -196,6 +186,25 @@ export default function TemporaryDrawer({ isScrolled }) {
           </ListItem>
         ))}
       </List>
+      <List sx={{ flexDirection: "column" }}>
+        <h2 className={styles.BurgerSubTitle}>Galerie</h2>
+        {["Nos réalisations"].map((text, index) => (
+          <ListItem key={text} disablePadding sx={{ marginLeft: "80px" }}>
+            <ListItemButton
+              sx={{ span: { width: "15rem" } }}
+              onClick={() => handleScrollToAtservices(text)}
+            >
+              <ListItemText
+                primary={text}
+                sx={{ span: { fontWeight: "bold" } }}
+              />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <div className={styles.contactButtonContainer}>
+        <button className={styles.contactButton}>Contact</button>
+      </div>
     </Box>
   );
 

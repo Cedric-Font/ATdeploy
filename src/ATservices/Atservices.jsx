@@ -14,6 +14,7 @@ import FormBackground from "../assets/formBackground.jpg";
 import FormBackground2 from "../assets/formBackground2.png";
 import { FaCircleArrowUp } from "react-icons/fa6";
 import { useState, useEffect } from "react";
+import AboutUs from "../AboutUs/AboutUs";
 
 export default function Atservices() {
   const [displayed, setDisplayed] = useState(window.innerWidth);
@@ -237,7 +238,7 @@ export default function Atservices() {
       </section>
       <section className={styles.referenceContainer}>
         <div className={styles.referenceMap}>
-          {referencesTab.map((reference, index) => (
+          {/* {referencesTab.map((reference, index) => (
             <div key={index} className={styles.reference}>
               <img
                 src={reference.image}
@@ -246,8 +247,9 @@ export default function Atservices() {
               />
               <p className={styles.referenceText}>{reference.text}</p>
             </div>
-          ))}
+          ))} */}
         </div>
+        <AboutUs />
         <div className={styles.moreInformation}>
           <h2 className={styles.moreTitle}>
             Vous souaithez en savoir plus sur ATservices ?

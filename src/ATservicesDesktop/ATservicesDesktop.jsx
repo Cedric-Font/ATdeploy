@@ -297,9 +297,9 @@ export default function ATservicesDesktop() {
         <Values />
       </section>
       <Ressources />
-      <div>
-        <h2>Nos filliales</h2>
-        <p>
+      <div className={styles.fillialesHeader}>
+        <h2 className={styles.fillialeTitle}>Nos filliales</h2>
+        <p className={styles.fillialeContent}>
           ATpartners est une holding regroupant 3 filliales, ATservices,
           ATimmobilier, ATpromotion
         </p>
